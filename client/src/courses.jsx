@@ -22,7 +22,7 @@ export default function Courses() {
 }
   const getData = async () => {
     try {
-      const res = await fetch("http://localhost:2006/get", {
+      const res = await fetch("kuchh-bhi-production.up.railway.app/get", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -39,7 +39,7 @@ export default function Courses() {
   }, []);
   const handlePayment = async (course) => {
     try {
-      const res = await fetch("http://localhost:2006/order", {
+      const res = await fetch("kuchh-bhi-production.up.railway.app/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
